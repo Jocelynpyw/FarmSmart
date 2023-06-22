@@ -132,7 +132,7 @@ function Home() {
             </ul>
           </div>
           <div>
-            <Link to="/login" style={{ textDecoration: "none" }}>
+            <Link to="/student" style={{ textDecoration: "none" }}>
               <a href="#" className="nav-link-item">
                 <button
                   style={{
@@ -145,7 +145,7 @@ function Home() {
                   }}
                 >
                   {/* <i class="fa-regular fa-avatar"></i> */}
-                  Sign in
+                  My space
                 </button>
               </a>
             </Link>

@@ -2,13 +2,16 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { ProSidebarProvider } from "react-pro-sidebar";
 
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <ProSidebarProvider>
+      <App />
+    </ProSidebarProvider>
   </React.StrictMode>,
   document.getElementById("root")
 );
