@@ -1,4 +1,4 @@
-function applyAHP(courses) {
+export default function applyAHP(courses) {
   // Étape 1 : Comparaison par paires et construction de matrices de comparaison
   const pairwiseComparisons = [
     [1, 3, 5, 7], // Comparaisons pour le critère de coût
