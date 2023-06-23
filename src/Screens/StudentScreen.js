@@ -4,10 +4,11 @@ import Sidebarr from "./sidebar";
 import "../index.css";
 import { Box } from "@mui/material";
 import { ToastContainer, toast } from "react-toastify";
-
+import data from "../assets/data";
 import "react-toastify/dist/ReactToastify.css";
 
 const StudentScreen = (props) => {
+  console.log("Les datas des courses sont : ");
   const autheInfos = localStorage.getItem("AuthInfo");
 
   const autheInfosFormated = JSON.parse(autheInfos);
@@ -18,11 +19,14 @@ const StudentScreen = (props) => {
       }, 1000);
       props.history.push("/login");
     } else {
-      //   console.log(" je suis deja la ehhh");
       console.log(
-        "Les information de connextion du donman ci sont : ",
-        autheInfos
+        "voici ce que autheInfosFormated contient ",
+        autheInfosFormated.user.first_name
       );
+      toast.success(`Connected : ${autheInfosFormated?.user?.email}`);
+      // setTimeout(() => {
+      //   toast.success(`voici les infos : ${autheInfosFormated?.user?.email}`);
+      // }, 1000);
     }
   }, []);
   return (
@@ -44,7 +48,7 @@ const StudentScreen = (props) => {
         <Topbar />
         <main className="mainSection">
           {/* Here we will write this section's code */}
-          <p>Je suis dans la section Etudiant</p>
+          <p>Nous allons faire la presentation de napla course </p>
         </main>
       </Box>
     </div>
