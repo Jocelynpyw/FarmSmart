@@ -38,7 +38,13 @@ const Sidebarr = (props) => {
 
   return (
     <Box>
-      <Sidebar style={{ boxShadow: "0px 0px 5px rgba(39, 174, 96, 0.5)" }}>
+      <Sidebar
+        style={{
+          boxShadow: "0px 0px 5px rgba(39, 174, 96, 0.5)",
+          position: "relative",
+          height: "100% !important",
+        }}
+      >
         {/* Title Section */}
         <Box>
           <Box

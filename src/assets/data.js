@@ -102,4 +102,4 @@ const courseTomato = [
   // Ajoutez d'autres cours ici
 ];
 
-export default courses;
+export { courses, courseTomato };
