@@ -145,7 +145,7 @@ function Home() {
                   }}
                 >
                   {/* <i class="fa-regular fa-avatar"></i> */}
-                  My space
+                  My Space
                 </button>
               </a>
             </Link>
@@ -202,6 +202,7 @@ function Home() {
             <p style={{ marginTop: 10 }}>
               <span>Already have an account?</span>{" "}
               <Link
+                to="/login"
                 style={{
                   color: "#000",
                   textDecoration: "none",
